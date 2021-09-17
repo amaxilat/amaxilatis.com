@@ -1,0 +1,103 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+description: These are the projects I have worked on.
+---
+
+
+<h3>Groups, Projects & Software</h3>
+<ul>
+  <li><a href="https://www.facebook.com/pspace22/">P-Space</a> Patras Hackerspace</li>
+  <li><a href="https://www.meetup.com/themeeplers/">The Meeplers</a> Patras Boardgaming Community</li>
+  <li><a href="https://github.com/amaxilat/ble_definitions">ble_definitions</a> Arduino library with BLE service and
+    characteristic definitions that can be used directly from any Arduino Sketch
+  </li>
+  <li><a href="https://github.com/amaxilat/orion-client">orion-client</a> Client for the FiWare Orion Context Broker
+  </li>
+  <li><a href="https://github.com/amaxilat/generic-remote-control-card">generic-remote-control-card</a> Samsung Tv and
+    General Electric remote controls for Home Assistant
+  </li>
+  <li><a href="https://github.com/amaxilat/netcs">NETCS</a> Network Constructor Simulator</li>
+</ul>
+
+<h3>Personal Contributions</h3>
+
+<ul>
+    <li>Member of Codebender.cc founding team, a cloud based IDE for Arduino and other Embedded devices. Developer of the browser
+        to device communication interfaces (java based applet initially, replaced by a cross browser extension), CI
+        services and Over-The-Network Programing.
+    </li>
+    <li>Member Sensorflare founding team, an award winning platform, which helps you to control all of your smart devices. Even
+        if they are produced by different manufacturers.
+        Sensorflare simplifies your everyday intelligent living. Everyone is a wizard in a smart device world.
+    </li>
+    <li>Wiselib contributor: and algorithmic library for Wireless Sensor Network. Wiselib offers developers an
+        abstraction layer from hardware specifications to develop algorithms based on generic programming and advanced
+        C++ concepts.
+    </li>
+
+</ul>
+
+<h3>Research Projects</h3>
+
+<li><a href="http://www.gamecar.eu/">GamECAR</a>: Road transport is one of the major causes of the environmental
+    pollution. In addition, road traffic injuries are a serious public health problem in the European Region, with huge
+    social and financial adverse effects. A leading cause for both issues is aggressive driving.Driver’s style makes a
+    difference in terms of fuel consumption, with a stretch up to 35 % between a calm and an aggressive one. Individuals
+    can contribute in the reduction of CO2 emission associated to personal transportation by operating their vehicles
+    more efficiently.To make this change more effective, GamECAR will put in place an innovative strategy building on
+    Gamification.
+</li>
+<li><a href="http://gaia-project.eu/">GAIA</a>: GAIA (Green Awareness In Action) is a three year long, EU-funded H2020
+    project made up of nine partners.
+</li>
+This project aims to promote positive behavioural changes within communities regarding energy consumption/awareness. GAIA activities consist of the gamification of real-time, IoT-enhanced energy consumption metrics in trial schools located in Italy, Greece and Sweden.</li>
+<li><a href="http://organicity.eu/">Organicity</a>: OrganiCity is a platform for interaction between everyone in the
+    city. Citizens, activists, researchers, businesses, city government – everyone in the city can contribute. Through
+    workshops, meetups, conferences and events, and online via discussion boards and other platforms, social media and a
+    growing set of online tools, you can get involved to highlight the ways you think smart technology can help make
+    your city a better place to live, work and play.
+</li>
+<li><a href="https://amaxilatis.com/greenmindset.cti.gr">Greenmindset</a>: The project aims to implement the green
+    concept for reducing the energy load on selected carriers of the Greek Ministry of Education as an initial pilot
+    implementation on which to base further actions, which will cover the building of infrastructure. This pilot project
+    was implemented in 48 school campuses and two buildings of CTI.
+</li>
+<li><a href="http://www.spitfire-project.eu/">SPITFIRE</a>: Semantic-Service Provisioning for the Internet of Things
+    using Future Internet Research by Experimentation. The project is funded as part of an ICT/FIRE European Union
+    program.
+</li>
+<li><a href="http://www.wisebed.eu/">WISEBED</a>: Wireless Sensor Network Testbed. The project is funded as part of an
+    ICT/FIRE European Union program.
+</li>
+<li><a href="http://fronts.cti.gr/">FRONTS</a>: Foundations of Adaptive Networked Societies of Tiny Artefacts. The
+    project is funded as part of an ICT/FET European Union program.
+</li>
+
+{% assign sorted = site.projects | sort: 'date' | reverse %} {% for item in
+sorted %}
+<!--<a href="{{item.url  | relative_url }}" class="nostyle">-->
+<!--  <div-->
+<!--    class="row work cards borders rounded overflow-hidden"-->
+<!--    data-aos="fade-up"-->
+<!--  >-->
+<!--    <div class="col-md-6 work-ind">-->
+<!--      <div-->
+<!--        class="work-image"-->
+<!--        style="background-image: url({{item.image  | relative_url }})"-->
+<!--      ></div>-->
+<!--    </div>-->
+<!--    <div class="col-md-6 details">-->
+<!--      <h1 class="double-u">{{item.title}}</h1>-->
+<!--      <p>{{item.description | truncate: 120}}</p>-->
+<!--      <p class="company">-->
+<!--        <strong>Client:</strong><span> {{item.company}}</span>-->
+<!--      </p>-->
+<!--      <p class="date">-->
+<!--        <strong>Date:</strong><span> {{ item.date | date: '%B %d, %Y' }}</span>-->
+<!--      </p>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</a>-->
+{% endfor %}
