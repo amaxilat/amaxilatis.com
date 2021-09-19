@@ -29,7 +29,7 @@ This layout is used for posts. Changing anything here will affect all posts(not 
 
 <div
   class="featured-image rounded shadow"
-  style="background-image: url({{page.image | relative_url }})"
+  style="background-image: url({{page.image2 | relative_url }})"
   data-aos="zoom-in"
 ></div>
 
@@ -41,8 +41,8 @@ This layout is used for posts. Changing anything here will affect all posts(not 
 </div>
 <hr class="dashed" />
 <div class="container">
-  {% if site.share %} {% include share-buttons.html %} {% endif %} {% if
-  page.categories %} {% include categories-post.html %} {% endif %} {% if
-  site.disqus %} {% include disqus.html %} {% endif %} {% if site.recent-posts
-  %} {% include recent.html %} {% endif %}
+<!--  {% if site.share %} {% include share-buttons.html %} {% endif %} -->
+<!--  {% if page.categories %} {% include categories-post.html %} {% endif %} -->
+<!--  {% if site.disqus %} {% include disqus.html %} {% endif %} -->
+<!--  {% if site.recent-posts %} {% include recent.html %} {% endif %}-->
 </div>
